@@ -10,7 +10,7 @@
   <input type="date" (input)="onDateChange($any($event.target).value)" />
 </div>
 
-{{ date | date }}
+{{ date | date: 'fullDate' }}
 
 <div>
   <label>Amount</label>

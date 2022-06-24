@@ -29,3 +29,11 @@
 <br />
 <br />
 {{ example | json }}
+
+<div>
+  <label>Miles to Kilometers</label>
+  <input type="number" (input)="onMilesChange($any($event.target).value)" />
+</div>
+
+<label>Kilometers:</label>
+{{ miles | convert | number: '1.0-5'}}

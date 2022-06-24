@@ -10,6 +10,15 @@ export class AppComponent {
   date: string = '';
   amount: number = 0;
   height: number = 0;
+  
+  example = {
+    foo: 5,
+    bar: 'test',
+    who: {
+      name: 'Aaron',
+      likes: 'pizza'
+    }
+  }
 
   onNameChange(value: string) {
     this.name = value;

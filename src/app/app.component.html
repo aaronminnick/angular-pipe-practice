@@ -18,3 +18,10 @@
 </div>
 
 {{ amount | currency }}
+
+<div>
+  <label>Height</label>
+  <input type="number" (input)="onHeightChange($any($event.target).value)" />
+</div>
+
+{{ height | number: '1.0-5' }}

@@ -4,3 +4,17 @@
 </div>
 
 {{ name | titlecase }}
+
+<div>
+  <label>Payment Date</label>
+  <input type="date" (input)="onDateChange($any($event.target).value)" />
+</div>
+
+{{ date | date }}
+
+<div>
+  <label>Amount</label>
+  <input type="number" (input)="onAmountChange($any($event.target).value)" />
+</div>
+
+{{ amount | currency }}
